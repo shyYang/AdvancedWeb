@@ -6,7 +6,7 @@ COPY /lab2/ /usr/local/nodejs
 
 WORKDIR /usr/local/nodejs/lab2
 
-RUN cd server
+RUN cd /server/
 RUN npm install
 RUN npm build
 
