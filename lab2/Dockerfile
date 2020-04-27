@@ -4,9 +4,8 @@ RUN mkdir -p /usr/local/nodejs
 
 COPY /lab2/ /usr/local/nodejs
 
-WORKDIR /usr/local/nodejs/lab2
+WORKDIR /usr/local/nodejs/lab2/server
 
-RUN cd server/
 RUN npm install
 RUN npm build
 
