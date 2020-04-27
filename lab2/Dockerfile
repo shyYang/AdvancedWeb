@@ -1,8 +1,8 @@
 FROM node:10.20.1
 
-RUN mkdir -p /usr/local/nodejs
+RUN mkdir -p /usr/local/nodejs/lab2
 
-COPY /lab2/ /usr/local/nodejs
+COPY /lab2/ /usr/local/nodejs/lab2
 
 WORKDIR /usr/local/nodejs/lab2/server
 
