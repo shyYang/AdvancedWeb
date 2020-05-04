@@ -13,7 +13,7 @@ COPY . /app
 WORKDIR /app
  
 # 安装依赖,构建程序,这里由于我需要反向代理到子目录，所以添加了base-href参数
-RUN npm install && ng build --base-href /manage/ --prod
+RUN npm install && ng build --prod
  
 EXPOSE ${PORT}
  
